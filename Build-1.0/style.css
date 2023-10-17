@@ -51,6 +51,12 @@ nav li a:hover{
     color: #0a49d6 !important;
 }
 
+.activeNav{
+  font-weight: bold;
+  color: #0a49d6 !important;
+
+}
+
 
 
 
@@ -246,6 +252,12 @@ nav li a:hover{
   margin-top: 100px;
   color: white;
   font-size: 30px;
+}
+
+.formRight h3{
+  color: white;
+  font-size: 30px;
+  margin-top: 50px;
 }
 
 .formInputMulti{

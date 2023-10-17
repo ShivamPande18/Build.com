@@ -3,52 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesR.css">
+    <!-- <link rel="stylesheet" href="stylesR.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Register as a Maker</title>
+
 </head>
 <body>
     
-    <header class="head">
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li class="cur"><a href="maker-registration.html"> Register as a Maker </a></li>
-                <li><a href="Team.html"> Team </a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li class="navLogo"><a href = "http://127.0.0.1:5500/index.html">Build.AI</a></li>
+            <li><a>Products</a></li>
+            <li><a href="http://127.0.0.1:5500/maker-registration.html" class="activeNav">For Maker</a></li>
+            <li><a>Contact Us</a></li>
+        </ul>
+    </nav>
 
-    <section class="text">
-        <h1>Interested in <span class="KW">making money</span> by creating <span class="KW">awesome projects </span>for clients?</h1>
-        <h1>If so, sign up as a builder today at <span class="KW">build.com</span></h1>
+    <section class="taglineSec">
+        <h1>Interested in <span class="KW">making money</span> by creating <span class="KW">awesome projects </span>for clients?
+        <br>If so, sign up as a builder today at <span class="KW">build.com</span></h1>
         <div class="curve"></div>
     </section>
 
-    <section class="one">
-   
-        <h1 class="fill">Fill in the form and get added to a WhatsApp group upon selection</h1>
+    <section class="formSec">
+        <div class="formCont">
+            <div class="formLeft">
+                <h1>Fill in the form and get added to a WhatsApp group upon selection🛠️</h1>
+            </div>
+            <div class="formRight">
+                <h3>Name</h3>
+                <input class="formInputMulti" 
+                type="text"
+                placeholder="Eg. Shivam Pande">
 
-        <form id="makerRegistrationForm">
-            <label for="name" class="la">Name:</label>
-            <input type="text" id="name" name="name" placeholder="According to any governament issued ID card " required><br><br>
-            
-            <label for="email" class="la">Email:</label>
-            <input type="email" id="email" placeholder="Email" name="email" required><br><br>
-            
-            <label for="phoneNumber" class="la">Phone Number:</label>
-            <input type="tel" id="phoneNumber" placeholder="Include country code"  name="phoneNumber" required><br><br>
-            
-            <label for="portfolioLink" class="la">Project links</label>
-            <input type="url" id="portfolioLink" name="portfolioLink" placeholder="You can include your relavent socialmedia handle" required><br><br>
-            
-            <label for="resume" class="la">Resume:</label>
-            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
-            
-            <label for="experience" class="la">Experience in building products:</label>
-            <textarea id="experience" name="experience" rows="4" placeholder="You can also include the competitions which you have won" required></textarea><br><br>
-            
-            <input type="submit" class="sub" value="Submit">
-        </form>
+                <h3>Email</h3>
+                <input class="formInputMulti"
+                type="email" 
+                placeholder="Eg. shivshivampande18@gmail.com">
+
+                <h3>Phone Number</h3>
+                <input class="formInputMulti" type="number" placeholder="Eg. 7302089977..">
+
+                <h3>Resume</h3>
+                <input class="formInputMulti" type="file">
+                
+                <button class="formNextBtn">Next</button>
+            </div>
+        
+        
+        </div>
     
     </section>
     

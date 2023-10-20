@@ -19,7 +19,7 @@
 
     <section class="taglineSec">
         <h1>
-            Experience the Future of <span> Hardware </span> Creation with <span>MAKEADDA</span>, Your Personal <span>ChatGPT</span> for Building Anything
+            Experience the Future of <span> Hardware </span> Creation with <span>Build.Ai</span>, Your Personal <span>ChatGPT</span> for Building Anything
         </h1>
     </section>
 
@@ -35,7 +35,8 @@
                 type="text"
                 cols="40" 
                 rows="10" 
-                placeholder="eg, Example of the requirement"></textarea>
+                placeholder="eg, Example of the requirement"
+                id = "requirement"></textarea>
                 <button class="formNextBtn" onclick="OnNext()">Next</button>
             </div>
             
@@ -49,7 +50,7 @@
             <div class="formRight">
                 <h2>Enter your budget</h2>
                 <textarea class="formInputMulti" type="text" cols="40" rows="10"
-                    placeholder="eg, Example of the requirement"></textarea>
+                    placeholder="eg, Example of the requirement" id = "budget"></textarea>
                 <button class="formNextBtn" onclick="OnNext()">Next</button>
             </div>
         </div>
@@ -60,14 +61,24 @@
             </div>
             <div class="formRight">
                 <h2>Enter your details</h2>
-                <textarea class="formInputMulti" type="text" cols="40" rows="10"
-                    placeholder="eg, Example of the requirement"></textarea>
-                <button class="formNextBtn" onclick="OnNext()">Next</button>
+                <textarea class="formInputMulti" type="text" cols="40" rows="10" placeholder="eg, Example of the requirement"
+                    id="details"></textarea>
+                <button class="formNextBtn" onclick="OnSubmit()">Next</button>
+            </div>
+        </div>
+
+        <div class="formCont">
+            <div class="formLeft">
+                <h1>Thanks for registering🙏🏼</h1>
+            </div>
+            <div class="formRight">
+                <h2>We will get back to you</h2>
             </div>
         </div>
 
         
     </section>
+    <script src="server.js" type="module"></script>
     <script src="index.js"></script>
 
 </body>
